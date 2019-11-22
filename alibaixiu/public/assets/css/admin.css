@@ -350,3 +350,34 @@ body {
   border-radius: 50%;
   box-shadow: 0 1px 5px #ccc;
 }
+
+.login .login-wrap .msg-warp {
+  min-height: 23px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: auto!important;
+  display: none;
+}
+
+.login .login-wrap .msg-warp .msg-error {
+  position: relative;
+  background: #ffebeb;
+  color: #e4393c;
+  border: 1px solid #faccc6;
+  padding: 3px 10px 3px 40px;
+  line-height: 15px;
+  height: auto;
+}
+
+.login .login-wrap .msg-warp .msg-error b {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: block;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) -104px -49px no-repeat;
+}
+
