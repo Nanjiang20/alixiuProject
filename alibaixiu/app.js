@@ -29,11 +29,11 @@ app.use(formidableMiddleware({
 }));
 
 // 数据库连接
-mongoose.connect('mongodb://itcast:itcast@localhost:27017/alibaixiu', { useNewUrlParser: true, useCreateIndex: true})
+mongoose.connect('mongodb://localhost:27017/alibaixiu', { useNewUrlParser: true, useCreateIndex: true})
 	.then(() => console.log('数据库连接成功'))
 	.catch(() => console.log('数据库连接失败'));
 
 // 路由
 require('./routes')(app);
 // 返回系统监听
-app.listen(3000, () => console.log('服务器启动成功'));
+app.listen(80, () => console.log('服务器启动成功'));
