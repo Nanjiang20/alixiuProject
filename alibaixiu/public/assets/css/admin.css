@@ -180,6 +180,10 @@ body {
   font-weight: 400;
 }
 
+.main .container-fluid .alert-danger {
+  display: none;
+}
+
 .main .container-fluid .page-title .btn-primary {
   margin-left: 5px;
 
