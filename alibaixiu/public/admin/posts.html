@@ -114,7 +114,7 @@
       <td class="addhide">{{$value.title}}</td>
       <td>{{$value.author.nickName}}</td>
       <td>{{$value.category.title}}</td>
-      <td class="text-center">{{$imports.getTime($value.category.createAt)}}</td>
+      <td class="text-center">{{$imports.getTime($value.createAt)}}</td>
       <td class="text-center">{{$value.state == 1 ? '已发布' : '草稿'}}</td>
       <td class="text-center">
       <a href="/admin/post-add.html?_id={{$value._id}}" class="btn btn-default btn-xs">编辑</a>

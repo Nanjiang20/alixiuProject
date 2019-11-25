@@ -71,7 +71,7 @@ $('#classlyForm').on('submit', function () {
 });
 
 $('#articleListBox').on('click', '.delete', function() {
-    if (confirm('确定要删？')) {
+    // if (confirm('确定要删？')) {
         let id = $(this).attr('data-id');
         // console.log(id);
         $.ajax({
@@ -81,5 +81,5 @@ $('#articleListBox').on('click', '.delete', function() {
                 location.reload();
             }
         });
-    }
+    // }
 });
