@@ -222,8 +222,17 @@ body {
 }
 
 .main .container-fluid table {
+  /* table-layout: fixed; */
   background-color: #fff;
 }
+/* 
+.addhide{
+  display: inline-block;
+  width: 600px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+} */
 
 .main .container-fluid th {
   border-bottom: 1px;

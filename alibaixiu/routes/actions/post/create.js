@@ -8,6 +8,10 @@ module.exports = async (req, res) => {
 	if (error) return res.status(400).send({message: error.details});
 	// 添加作者
 	req.fields.author = req.session.userInfo._id;
+	// 时间未选择时，使用默认值修正时间
+	if (req.fields.createAt == '') {
+		delete req.fields.createAt
+	}
 	// 创建分类
 	const post = new Post(req.fields);
 	// 保存分类
